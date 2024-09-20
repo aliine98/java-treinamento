@@ -4,7 +4,7 @@ import br.com.aline.exception.SaldoInsuficienteException;
 import br.com.aline.modelo.Conta;
 import br.com.aline.modelo.Pessoa;
 
-public class teste_conta {
+public class TestaConta {
 
     public static void main(String[] args) {
         Pessoa a = new Pessoa("Aline");

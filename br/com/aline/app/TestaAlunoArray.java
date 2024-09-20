@@ -17,7 +17,7 @@ class Turma {
     }
 }
 
-public class teste_aluno_array {
+public class TestaAlunoArray {
     public static void main(String[] args) {
         Turma t = new Turma();
         t.alunos = new Aluno[10];

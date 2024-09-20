@@ -4,7 +4,7 @@ import br.com.aline.exception.SaldoInsuficienteException;
 
 import java.util.Objects;
 
-public class Conta {
+public class Conta implements Comparable<Conta> {
     private int agencia;
     private double saldo;
     private Pessoa titular;
@@ -25,7 +25,7 @@ public class Conta {
         }
     }
 
-    public void deposita(double valor) {
+    public synchronized void deposita(double valor) {
         this.saldo += valor;
     }
 
@@ -47,12 +47,17 @@ public class Conta {
 
     @Override
     public boolean equals(Object o) {
-        if (!(o instanceof Conta conta)) return false;
-        return agencia == conta.agencia && getNumero() == conta.getNumero();
+        if (!(o instanceof Conta)) return false;
+        return getNumero() == ((Conta) o).getNumero();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(agencia, getNumero());
+        return Objects.hash(getNumero());
+    }
+
+    @Override
+    public int compareTo(Conta outra) {
+        return this.titular.nome.compareTo(outra.titular.nome);
     }
 }
