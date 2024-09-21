@@ -1,5 +1,7 @@
 package br.com.aline.financeiro;
 
+import java.io.FileNotFoundException;
+
 public class BalancoEmpresa {
     private ArmazenadorDeDividas dividas;
 
@@ -16,5 +18,6 @@ public class BalancoEmpresa {
         if (divida != null) {
             divida.registra(pagamento);
         }
+        dividas.save(divida);
     }
 }

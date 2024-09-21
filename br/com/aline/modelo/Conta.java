@@ -17,6 +17,12 @@ public class Conta implements Comparable<Conta> {
         this.numero = totalDeContas;
         this.titular = titular;
     }
+
+    /**
+     * Saca um valor da conta
+     * @param valor valor a ser sacado
+     * @throws SaldoInsuficienteException quando o saldo é insuficiente para sacar o valor
+     */
     public void saca(double valor) {
         if (this.saldo >= valor) {
             this.saldo -= valor;
@@ -48,12 +54,12 @@ public class Conta implements Comparable<Conta> {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Conta)) return false;
-        return getNumero() == ((Conta) o).getNumero();
+        return this.numero == ((Conta) o).getNumero();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNumero());
+        return Objects.hash(this.numero);
     }
 
     @Override

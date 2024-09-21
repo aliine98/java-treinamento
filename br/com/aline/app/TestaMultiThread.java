@@ -19,7 +19,7 @@ public class TestaMultiThread {
         t1.start();
         t2.start();
         t1.join();
-        t1.join();
+        t2.join();
         System.out.println(c1.getSaldo());
     }
 }

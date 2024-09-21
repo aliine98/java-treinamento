@@ -1,0 +1,4 @@
+Divida{total=100.0, credor='Aline', docCredor=1233444, pagamentos=valorPago=0.0}
+Divida{total=200.0, credor='Pessoa', docCredor=12345, pagamentos=valorPago=0.0}
+null
+null

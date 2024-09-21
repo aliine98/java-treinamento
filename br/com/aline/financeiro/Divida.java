@@ -31,4 +31,14 @@ public class Divida {
     public Documento getDocCredor() {
         return this.docCredor;
     }
+
+    @Override
+    public String toString() {
+        return "Divida{" +
+                "total=" + total +
+                ", credor='" + credor + '\'' +
+                ", docCredor=" + docCredor +
+                ", pagamentos=" + pagamentos +
+                '}';
+    }
 }

@@ -12,23 +12,23 @@ public class Pagamento {
     }
 
     public String getPagador() {
-        return pagador;
+        return this.pagador;
     }
 
     public Documento getDocPagador() {
-        return docPagador;
+        return this.docPagador;
     }
 
     public double getValor() {
-        return valor;
+        return this.valor;
     }
 
     @Override
     public String toString() {
-        return "Pagamento{" +
-                "pagador='" + pagador + '\'' +
-                ", docPagador=" + docPagador +
-                ", valor=" + valor +
+        return "Pagamento {" +
+                "pagador='" + this.pagador + '\'' +
+                ", docPagador=" + this.docPagador +
+                ", valor=" + this.valor +
                 '}';
     }
 }

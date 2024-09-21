@@ -24,6 +24,9 @@ public class TestaAlunoArray {
         t.alunos[0] = new Aluno();
         t.alunos[0].nome = "Aline";
         t.alunos[0].nota = 10;
+        t.alunos[2] = new Aluno();
+        t.alunos[2].nota = 8;
+        t.alunos[2].nome = "pessoa";
         t.mostraNotasAlunos();
     }
 }

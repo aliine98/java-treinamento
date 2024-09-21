@@ -1,4 +1,4 @@
-package br.com.aline.financeiro.app;
+package br.com.aline.app;
 
 import br.com.aline.financeiro.Cnpj;
 import br.com.aline.financeiro.Cpf;

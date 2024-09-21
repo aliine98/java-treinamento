@@ -1,7 +1,9 @@
 package br.com.aline.financeiro;
 
-public interface ArmazenadorDeDividas {
-    public void save(Divida divida);
+import java.io.FileNotFoundException;
 
-    public Divida get(Documento docCredor);
+public interface ArmazenadorDeDividas {
+    void save(Divida divida);
+
+    Divida get(Documento docCredor);
 }

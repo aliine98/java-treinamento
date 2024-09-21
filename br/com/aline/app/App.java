@@ -1,9 +1,11 @@
-package br.com.aline.financeiro.app;
+package br.com.aline.app;
 
 import br.com.aline.financeiro.*;
 
+import java.io.FileNotFoundException;
+
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         //BancoDeDados bd = new BancoDeDados("localhost","aline","123");
         Arquivo bd = new Arquivo();
         BalancoEmpresa balanco = new BalancoEmpresa(bd);

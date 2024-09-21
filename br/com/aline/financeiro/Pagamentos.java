@@ -7,7 +7,7 @@ import java.util.List;
 //a lista de pagamentos da divida agora tem uma classe com métodos próprios
 public class Pagamentos implements Iterable<Pagamento> {
     private double valorPago;
-    private ArrayList<Pagamento> pagamentos = new ArrayList<>();
+    private List<Pagamento> pagamentos = new ArrayList<>();
 
     private void paga(double valor) {
         if (valor <= 0) throw new IllegalArgumentException("Valor inválido para pagamento");
@@ -23,7 +23,7 @@ public class Pagamentos implements Iterable<Pagamento> {
     }
 
     public double getValorPago() {
-        return valorPago;
+        return this.valorPago;
     }
 
     public List<Pagamento> pagamentosComValorMaiorQue(double valor) {
@@ -39,5 +39,10 @@ public class Pagamentos implements Iterable<Pagamento> {
     @Override
     public Iterator<Pagamento> iterator() {
         return this.pagamentos.iterator();
+    }
+
+    @Override
+    public String toString() {
+        return "valorPago=" + valorPago;
     }
 }

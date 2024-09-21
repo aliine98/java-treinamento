@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"br.com.aline.app"},{"l":"br.com.aline.exception"},{"l":"br.com.aline.financeiro"},{"l":"br.com.aline.financeiro.app"},{"l":"br.com.aline.modelo"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"br.com.aline.app"},{"l":"br.com.aline.exception"},{"l":"br.com.aline.financeiro"},{"l":"br.com.aline.modelo"}];updateSearchResults();

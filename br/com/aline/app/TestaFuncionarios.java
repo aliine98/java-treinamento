@@ -4,12 +4,10 @@ import br.com.aline.modelo.*;
 
 public class TestaFuncionarios {
     public static void main(String[] args) {
-        Gerente g = new Gerente();
-        Desenvolvedor d = new Desenvolvedor();
+        Gerente g = new Gerente("Fulano",1000.0);
+        Desenvolvedor d = new Desenvolvedor("Ciclano", 1000.0);
         Cliente c = new Cliente();
         SistemaInterno si = new SistemaInterno();
-        d.setSalario(1000.0);
-        g.setSalario(1000.0);
         TotalizadorDeBonus totalizador = new TotalizadorDeBonus();
         totalizador.adiciona(d);
         totalizador.adiciona(g);

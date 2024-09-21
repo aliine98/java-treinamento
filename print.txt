@@ -1,2 +1,1 @@
-texto teste
-com duas linhas
+teste
